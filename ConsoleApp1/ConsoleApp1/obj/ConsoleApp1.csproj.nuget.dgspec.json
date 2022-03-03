@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/minkodanilo/Documents/c_sharp_university/test_project/ConsoleApp1/ConsoleApp1/ConsoleApp1.csproj": {}
+    "/Users/minkodanilo/Documents/c_sharp_university/University_project/C-University/ConsoleApp1/ConsoleApp1/ConsoleApp1.csproj": {}
   },
   "projects": {
-    "/Users/minkodanilo/Documents/c_sharp_university/test_project/ConsoleApp1/ConsoleApp1/ConsoleApp1.csproj": {
+    "/Users/minkodanilo/Documents/c_sharp_university/University_project/C-University/ConsoleApp1/ConsoleApp1/ConsoleApp1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/minkodanilo/Documents/c_sharp_university/test_project/ConsoleApp1/ConsoleApp1/ConsoleApp1.csproj",
+        "projectUniqueName": "/Users/minkodanilo/Documents/c_sharp_university/University_project/C-University/ConsoleApp1/ConsoleApp1/ConsoleApp1.csproj",
         "projectName": "ConsoleApp1",
-        "projectPath": "/Users/minkodanilo/Documents/c_sharp_university/test_project/ConsoleApp1/ConsoleApp1/ConsoleApp1.csproj",
+        "projectPath": "/Users/minkodanilo/Documents/c_sharp_university/University_project/C-University/ConsoleApp1/ConsoleApp1/ConsoleApp1.csproj",
         "packagesPath": "/Users/minkodanilo/.nuget/packages/",
-        "outputPath": "/Users/minkodanilo/Documents/c_sharp_university/test_project/ConsoleApp1/ConsoleApp1/obj/",
+        "outputPath": "/Users/minkodanilo/Documents/c_sharp_university/University_project/C-University/ConsoleApp1/ConsoleApp1/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/minkodanilo/.nuget/NuGet/NuGet.Config"
