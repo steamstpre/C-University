@@ -1,2 +1,38 @@
-{
-}
+[
+  {
+    "Id": "123",
+    "Company": "CompanyOne",
+    "VatRate": 23,
+    "DateOfPurchase": "2010-10-06T00:00:00",
+    "VatCode": "VA-123-12-123",
+    "Country": "France",
+    "DateOfTaxRegistration": "2020-01-02T00:00:00"
+  },
+  {
+    "Id": "1234",
+    "Company": "CompanyTwo",
+    "VatRate": 13,
+    "DateOfPurchase": "2011-02-03T00:00:00",
+    "VatCode": "VA-124-12-123",
+    "Country": "Italy",
+    "DateOfTaxRegistration": "2020-02-03T00:00:00"
+  },
+  {
+    "Id": "12345",
+    "Company": "CompanyThree",
+    "VatRate": 33,
+    "DateOfPurchase": "2012-03-19T00:00:00",
+    "VatCode": "VA-123-12-123",
+    "Country": "Ukraine",
+    "DateOfTaxRegistration": "2020-03-04T00:00:00"
+  },
+  {
+    "Id": "0a4cd3fb-8220-40dd-a6ee-e7a6c29d2537",
+    "Company": "CompanyFirth",
+    "VatRate": 23,
+    "DateOfPurchase": "2020-03-06T00:00:00",
+    "VatCode": "VA-123-21-123",
+    "Country": "France",
+    "DateOfTaxRegistration": "2020-04-07T00:00:00"
+  }
+]

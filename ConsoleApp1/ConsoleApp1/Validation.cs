@@ -66,9 +66,16 @@ public class Validation
         return vatCode;
     }
 
-    public static Country setCountry(Country CountryInput)
+    public static string setCountry(string CountryInput)
     {
-        return CountryInput;
+        if (CountryInput == "Italy" || CountryInput == "France" || CountryInput == "Ukraine")
+        {
+            return CountryInput;
+        }
+        else
+        {
+            throw new InvalidDataException("wrong country");
+        }
     }
 
     public static DateTime setDataOfRefistrationTax(DateTime dateTime, DateTime dateOfPurcase)

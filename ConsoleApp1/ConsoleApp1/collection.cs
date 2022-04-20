@@ -44,10 +44,12 @@ public class Collection
     {
         bool SearchPredicater(TaxFree elem)
         {
-            foreach (PropertyDescriptor prop in TypeDescriptor.GetProperties(elem)) 
-                if (prop.GetValue(elem).ToString().Contains(searchParam)) return true;
+            foreach (PropertyDescriptor prop in TypeDescriptor.GetProperties(elem))
+                if (prop.GetValue(elem).ToString().Contains(searchParam))
+                    return true;
             return false;
         }
+
         var filtered = Validation.searchValidation(listCompanies.FindAll(SearchPredicater));
         return filtered;
     }
@@ -56,8 +58,10 @@ public class Collection
     {
         return (T) Enum.Parse(typeof(T), value, true);
     }
-    
-    public Collection ReadJsonFile(string fileName)
+
+    public Collection ReadJsonFile(
+        string fileName =
+            "/Users/minkodanilo/Documents/c_sharp_university/University_project/C-University/ConsoleApp1/ConsoleApp1/data.json")
     {
         using (StreamReader r = new StreamReader(fileName))
         {
@@ -67,17 +71,23 @@ public class Collection
             {
                 try
                 {
-                    TaxFree p = JsonConvert.DeserializeObject<TaxFree>(JsonConvert.SerializeObject( child ));
+                    TaxFree p = JsonConvert.DeserializeObject<TaxFree>(JsonConvert.SerializeObject(child));
                     if (string.IsNullOrEmpty(p.Id)) p.Id = Guid.NewGuid().ToString();
                     this.addElement(p);
                 }
-                catch (Exception e) { Console.WriteLine($"->{e.InnerException.Message}"); }
+                catch (Exception e)
+                {
+                    Console.WriteLine($"->{e.InnerException.Message}");
+                }
             }
         }
+
         return this;
     }
-        
-    public void WriteJsonFile(string fileName)
+
+    public void WriteJsonFile(
+        string fileName =
+            "/Users/minkodanilo/Documents/c_sharp_university/University_project/C-University/ConsoleApp1/ConsoleApp1/data.json")
     {
         string json = JsonConvert.SerializeObject(this.listCompanies.ToArray());
         System.IO.File.WriteAllText(fileName, json);
@@ -111,6 +121,7 @@ public class Collection
         string res = "";
         foreach (TaxFree element in listCompanies)
             res += element.ToString() + "\n\n";
+        Console.WriteLine("\n" + res.Substring(0, res.Length - 3));
         return "\n" + res.Substring(0, res.Length - 3);
     }
 }
